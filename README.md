@@ -11,10 +11,10 @@ $secret_key = "YourSecretKey"; // Replace with your actual secret key
 $encryptor = new SymmetricEncryption($secret_key);
 
 $encrypted_data = $encryptor->encrypt("Hello, this is a test message.");
-echo "Encrypted Data: $encrypted_data\n";
+echo "Encrypted Data: {$encrypted_data}\n";
 
 $decrypted_data = $encryptor->decrypt($encrypted_data);
-echo "Decrypted Data: $decrypted_data\n";
+echo "Decrypted Data: {$decrypted_data}\n";
 ```
 
 ## Note
